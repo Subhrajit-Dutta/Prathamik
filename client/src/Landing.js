@@ -28,7 +28,7 @@ function Landing(props) {
   }, [img]);
 
   const createRoomId = async (val) => {
-    await fetch('http://localhost:3000/create/roomid', {
+    await fetch('https://prathamik.onrender.com/create/roomid', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -22,7 +22,7 @@ function Login()
     const handleSubmit= async  (e)=>{
         e.preventDefault();
         try{
-            const url='http://localhost:3000/login';
+            const url='https://prathamik.onrender.com/login';
             const response=await axios.post(url,data);
             const res=response.data;
             localStorage.setItem('user', JSON.stringify(res));

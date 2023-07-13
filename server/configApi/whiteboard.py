@@ -9,7 +9,7 @@ import os
 import io
 app = Flask(__name__)
 CORS(app)
-CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/*": {"origins": "https://prathamik.onrender.com"}})
 CORS(app, resources={r"/*": {"origins": "http://localhost:3001/whiteboard"}})
 # Set the environment variable for the service account key file
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "server\\creds\\ocr-vision.json"
@@ -37,7 +37,7 @@ def ocr():
     else:
         extracted_text = ""
     return jsonify({'text': extracted_text})
-    response.headers.add('Access-Control-Allow-Origin', 'http://localhost:3000')
+    response.headers.add('Access-Control-Allow-Origin', 'https://prathamik.onrender.com')
     response.headers.add('Access-Control-Allow-Origin', 'http://localhost:3001')
     response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
 @app.route('/test', methods=['POST'])

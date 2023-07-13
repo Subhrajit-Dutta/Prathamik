@@ -160,7 +160,7 @@ function ParticipantView(props) {
                             {dp ?
                                 (
                                     <img
-                                        src={`http://localhost:3000/uploads/${dp}`}
+                                        src={`https://prathamik.onrender.com/uploads/${dp}`}
                                         alt=''
                                         className="smallDp"
                                     />
@@ -210,7 +210,7 @@ function ParticipantView(props) {
                             {dp ?
                                 (
                                     <img
-                                        src={`http://localhost:3000/uploads/${dp}`}
+                                        src={`https://prathamik.onrender.com/uploads/${dp}`}
                                         alt=''
                                         className="bigDp"
                                     />

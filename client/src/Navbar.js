@@ -76,7 +76,7 @@ function Navbar() {
   const [image, setImage] = useState('');
 
   const handleImageSubmit = () => {
-    const url = 'http://localhost:3000/';
+    const url = 'https://prathamik.onrender.com/';
 
     const formData = new FormData();
     formData.append('image', image);
@@ -99,7 +99,7 @@ function Navbar() {
     return (
       <div>
         <nav className={navbarShadow ? 'transparency' : 'navbar'}>
-          <a href='http://localhost:3000/' className='logo-container'>
+          <a href='https://prathamik.onrender.com/' className='logo-container'>
             <div className='logo'></div>
             <h1>Prathamik</h1>
           </a>
@@ -113,7 +113,7 @@ function Navbar() {
               <div className='user' onClick={handleProfileClick}>
                 {dp ? (
                   <img
-                    src={`http://localhost:3000/uploads/${dp}`}
+                    src={`https://prathamik.onrender.com/uploads/${dp}`}
                     alt=''
                   />
                 ) : (
@@ -146,7 +146,7 @@ function Navbar() {
     return (
       <div>
         <nav className={navbarShadow ? 'transparency' : 'navbar'}>
-          <a href='http://localhost:3000/' className='logo-container'>
+          <a href='https://prathamik.onrender.com/' className='logo-container'>
             <div className='logo'></div>
             <h1>Prathamik</h1>
           </a>
