@@ -1,0 +1,486 @@
+.stream-container {
+    background-color: #edf2f4;
+    color: white;
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid lightgrey; */
+}
+
+.videoCam
+{
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.z-index
+{
+    z-index: 5 !important;
+}
+
+.noVideoCam
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* min-height: 564px; */
+    background-color: #3D4043;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bigName
+{
+    letter-spacing: 0.6px;
+    font-weight: 400;
+    margin: 0;
+    position: absolute;
+    top: 3%;
+    left: 1.7%;
+    animation-name: bigNameAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    /* transform: translate(-350%, -1252%); */
+}
+
+@keyframes bigNameAnimation
+{
+    from
+    {
+        font-size: 13px;
+    }
+    to
+    {
+        font-size: 16px;
+    }
+}
+
+.smallName
+{
+    letter-spacing: 0.6px;
+    font-weight: 400;
+    margin: 0;
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    animation-name: smallNameAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes smallNameAnimation 
+{
+    from
+    {
+        font-size: 16px;
+    }
+    to
+    {
+        font-size: 13px;
+    }
+}
+
+.bigDp
+{
+    height: 170px;
+    width: 170px;
+    background-color: #202124;
+    animation-name: bigDpAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    border-radius: 50%;
+}
+
+@keyframes bigDpAnimation
+{
+    from
+    {
+        height: 45px;
+        width: 45px;
+    }
+    to
+    {
+        height: 170px;
+        width: 170px;
+    }
+}
+
+.smallDp
+{
+    animation-name: smallDpAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    background-color: #202124;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+
+@keyframes smallDpAnimation
+{
+    from
+    {
+        height: 170px;
+        width: 170px;
+    }
+    to
+    {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.bigInitial
+{
+    margin: 0;
+    padding: 62px 72px;
+    border-radius: 50%;
+    font-size: 40px;
+    background-color: #202124;
+    animation-name: bigInitialAnimation;
+    animation-fill-mode: both;
+    animation-duration: 0.5s;
+    
+}
+
+@keyframes bigInitialAnimation
+{
+    from
+    {
+        font-size: 20px;
+        padding: 20px 25px;
+    }
+    to
+    {
+        font-size: 40px;
+        padding: 62px 72px;
+    }
+}
+
+.smallInitial
+{
+    animation-name: smallInitialAnimation;
+    animation-fill-mode: both;
+    animation-duration: 0.5s;
+    margin: 0;
+    margin-top: 5px;
+    background-color: #202124;
+    border-radius: 50%;
+}
+
+@keyframes smallInitialAnimation
+{
+    from
+    {
+        font-size: 40px;
+        padding: 62px 72px;
+    }
+    to
+    {
+        font-size: 20px;
+        padding: 15px 20px;
+    }
+}
+
+.videoCam video
+{
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.pview
+{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    border-radius: 10px;
+    bottom: 0;
+    overflow: hidden;
+    /* height: 22%;
+    width: 20%; */
+    animation-name: bigFaceCam;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes bigFaceCam
+{
+    from
+    {
+        height: 22%;
+        width: 20%;
+    }
+    to
+    {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.smallPview
+{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    border-radius: 10px;
+    bottom: 0;
+    overflow: hidden;
+    /* height: 22%;
+    width: 20%; */
+    animation-name: smallFaceCam;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes smallFaceCam
+{
+    from
+    {
+        height: 100%;
+        width: 100%;
+    }
+    to
+    {
+        height: 22%;
+        width: 22%;
+    }
+}
+
+
+.allContainer
+{
+    /* border-radius: 10px; */
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 611px;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.joiningTag
+{
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    height: 80%;
+    width: 100%;
+    min-height: 530px;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+    font-size: 19px;
+}
+
+.video_control_buttons
+{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    gap: 20px;
+    position: relative;
+    /* top: -50px; */
+}
+
+.video_control_buttons button
+{
+    cursor: pointer;
+    border: 0;
+    border-radius: 50%;
+    font-size: 18px;
+    color: white;
+
+}
+
+.mic
+{
+    padding: 10px 14px;
+}
+
+.video
+{
+    padding: 10px 11.5px;
+}
+
+.screen_share
+{
+    padding: 10px 11px;
+}
+
+.coding
+{
+    padding: 11px 10.5px;
+
+}
+
+.whiteboard
+{
+    padding: 11px 12px;
+}
+
+.leave
+{
+    background-color: #D85140;
+    padding: 10px 12.5px;
+}
+
+.black_bg
+{
+    background-color: #3D4043;
+}
+.red_bg
+{
+    background-color: #D85140;
+}
+
+.whiteboard_in_stream
+{
+    height: 100%;
+    width: 100%;
+}
+
+.screen_share_in_stream
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ide_in_stream
+{
+    height: 100%;
+    width: 100%;
+}
+
+
+.meetingCard
+{
+    width: 260px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: black;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    z-index: 2;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.meetingCardHeading
+{
+    margin: 0;
+    letter-spacing: 0.8px;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meetingCardHeading span
+{
+    cursor: pointer;
+    padding: 5px 8px;
+    border-radius: 50%;
+    transition: ease-in-out 0.2s;
+    color: #5f6368;
+}
+
+.meetingCardHeading span:hover
+{
+    background-color: #e1e1e1;
+}
+
+.meetingCardSubHeading
+{
+    margin: 0;
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.meetingId
+{
+    margin: 0;
+    margin-top: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #F1F3F4;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.meetingId span
+{
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px;
+    background-color: #F1F3F4;
+    border-radius: 8px;
+    color: #5f6368;
+    position: relative;
+    z-index: 1;
+}
+
+.meetingId div
+{
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    animation: copyAnimation;
+    animation-duration: 2s;
+}
+
+@keyframes copyAnimation
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.meetingId span:hover
+{
+    background-color: #e1e1e1;
+}
+
+.meetingParticipantEmail
+{
+    margin: 0;
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: 400;
+}

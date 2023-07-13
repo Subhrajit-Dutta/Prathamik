@@ -1,0 +1,214 @@
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.platform_parent
+{
+  height: 100vh;
+  background-color: #edf2f4;
+  /* height: 100vh; */
+  /* width: 100vw; */
+  /* min-width: 1440px; */
+  min-height: 789px;
+  box-sizing: border-box;
+}
+
+.profile-pic{
+  height: 10px;
+  width: 10px;
+  background-image: url()
+}
+
+.platform_navbar
+{
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar_1
+{
+  box-sizing: border-box;
+  padding: 0px 0px 0px 30px;
+  width: 73.5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  /* border-bottom: 1px solid #bcbcbc; */
+}
+
+.logo-container-platform
+{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo
+{
+  width: 30px;
+  height: 30px;
+  background-image: url("../public/p.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo-container-platform h1
+{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.navbar_1 button
+{
+  padding: 7px 13px;
+  width: 5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: white;
+  color: var(--text);;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-btnss button i
+{
+  font-size: 15px;
+
+}
+
+.navbar_1 button span
+{
+  color: red;
+}
+
+.navbar_1 button:hover
+{
+  /* transform: translate(-3px,-3px); */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+.navbar_2
+{
+  padding-right: 30px;
+  width: 26.5%;
+  height: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* border-bottom: 1px solid #bcbcbc; */
+}
+
+.profile
+{
+  display: flex;
+  align-items: center;
+  height: 40px;
+  cursor: pointer;
+
+}
+.profile img
+{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+
+}
+
+.profile span
+{
+  padding: 8px 0px 8px 12px;
+  font-size: 16px;
+  color: white;
+}
+
+.profile ul
+{
+  background-color: #f3f3f3;
+  border: 1px solid #bcbcbc;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 45px;
+  right: 5px;
+  list-style: none;
+  overflow: hidden;
+}
+
+.profile ul li
+{
+  font-family: 'Roboto', sans-serif;
+  padding: 8px 10px;
+  color: #3d4047;
+  font-size: 15px;
+}
+
+.profile ul li:hover
+{
+  background-color: rgb(228, 228, 228);
+}
+
+
+.platform_components
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: calc(100% - 60px);
+  box-sizing: border-box;
+  background-color: #edf2f4;
+}
+
+/* .ide_in_platform_container
+{
+  width: 74.5%;
+}
+
+.board_in_platform_container
+{
+  width: 74.5%;
+  background-color: #ffffff;
+} */
+
+.stream_in_platform_container
+{
+  overflow: hidden;
+  width: 72.5%;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.chat_in_platform_container
+{
+  max-height: 685px;
+  background-color: white;
+  width: 26.5%;
+  border: 1px solid #bcbcbc;
+  box-sizing: border-box;
+}
+
+.nav-btnss{
+  display: flex;
+  gap: 1rem;
+}
