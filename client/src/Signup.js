@@ -30,7 +30,7 @@ function Signup()
             return;
         }
         try {
-            const url = 'https://prathamik.onrender.com/signup';
+            const url = 'https://prathamik-server.onrender.com/signup';
             const response = await axios.post(url, data);
             //   const res=response.data;
             navigate('/login');

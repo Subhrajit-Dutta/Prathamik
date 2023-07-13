@@ -9,7 +9,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [https://prathamik.onrender.com](https://prathamik.onrender.com) to view it in your browser.
+Open [https://prathamik-server.onrender.com](https://prathamik-server.onrender.com) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.

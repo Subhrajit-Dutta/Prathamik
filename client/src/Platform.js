@@ -11,7 +11,7 @@ import io from "socket.io-client";
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
-const socket = io.connect(`https://prathamik.onrender.com`);
+const socket = io.connect(`https://prathamik-server.onrender.com`);
 
 function Platform(props) {
   const user = JSON.parse(localStorage.getItem('user'));
@@ -45,7 +45,7 @@ function Platform(props) {
   }, [socket, props.meetingId]);
 
   useEffect(() => {
-    fetch(`https://prathamik.onrender.com/verify/owner`, {
+    fetch(`https://prathamik-server.onrender.com/verify/owner`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ function Platform(props) {
   }, []);
 
   useEffect(() => {
-    fetch(`https://prathamik.onrender.com/get/admin/details`, {
+    fetch(`https://prathamik-server.onrender.com/get/admin/details`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -147,7 +147,7 @@ function Platform(props) {
       `;
       console.log(input);
       try {
-        const response = await fetch(`https://prathamik.onrender.com/input`, {
+        const response = await fetch(`https://prathamik-server.onrender.com/input`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -259,7 +259,7 @@ function Platform(props) {
     const input = `${code}\n${userInput}`;
 
     try {
-      const response = await fetch(`https://prathamik.onrender.com/input`, {
+      const response = await fetch(`https://prathamik-server.onrender.com/input`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -382,7 +382,7 @@ function Platform(props) {
               Question by student: \n${userInput}
               AI Assistant: (Your generated response goes here);`;
 
-              const response = await fetch(`https://prathamik.onrender.com/input`, {
+              const response = await fetch(`https://prathamik-server.onrender.com/input`, {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json'
@@ -445,7 +445,7 @@ function Platform(props) {
       <div className='platform_navbar'>
         <div className='navbar_1'>
 
-          <a href='https://prathamik.onrender.com/' className='logo-container-platform'>
+          <a href='https://prathamik-server.onrender.com/' className='logo-container-platform'>
             <div className='logo'></div>
             <h1>Prathamik</h1>
           </a>
@@ -465,7 +465,7 @@ function Platform(props) {
             <div className='user'>
                 {dp ? (
                   <img
-                    src={`https://prathamik.onrender.com/uploads/${dp}`}
+                    src={`https://prathamik-server.onrender.com/uploads/${dp}`}
                     alt=''
                   />
                 ) : (

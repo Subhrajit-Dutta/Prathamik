@@ -33,11 +33,11 @@ Prathamik is an online learning platform designed to empower teachers and provid
    npm start
    ```
 
-   The application will be accessible at `https://prathamik.onrender.com`.
+   The application will be accessible at `https://prathamik-server.onrender.com`.
 
 ## Usage
 
-- Visit `https://prathamik.onrender.com` in your browser to access the Prathamik platform.
+- Visit `https://prathamik-server.onrender.com` in your browser to access the Prathamik platform.
 - Teachers can log in to their accounts, create courses, conduct live classes, and utilize the AI bot for doubt resolution.
 - Students can sign up, enroll in courses, participate in live classes, and utilize the doubt forum to seek assistance from teachers and peers.
 
