@@ -34,7 +34,7 @@ const routes = require('./Routes/routes');
 const { handleInput } = require('./gpt-3.5/gptController/inputController.js');
 app.use(express.json());
 app.use(cors({
-  origin: 'http://localhost:3001'
+  origin: 'https://prathamik.vercel.app'
 }));
 
 //routes
@@ -74,7 +74,7 @@ app.post('/', upload.single('image'), async (req, res) =>
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: 'http://localhost:3001',
+    origin: 'https://prathamik.vercel.app',
     methods: ['GET', 'POST']
   }
 });

@@ -8,7 +8,7 @@ let drawingData = [];
 function initializeSignalingServer(server) {
   io = new Server(server, {
     cors: {
-      origin: 'http://localhost:3001',
+      origin: 'https://prathamik.vercel.app',
       methods: ['GET', 'POST']
     }
   });
