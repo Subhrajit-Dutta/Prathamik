@@ -353,7 +353,7 @@ function Platform(props) {
       const formData = new FormData();
       formData.append('image', blob, 'screenshot.png');
 
-      fetch('http://localhost:5000/ocr', {
+      fetch('https://ocr-mxmn.onrender.com/ocr', {
         method: 'POST',
         body: formData,
       })
