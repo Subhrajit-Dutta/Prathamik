@@ -55,8 +55,14 @@ Before contributing or adding a new feature, please make sure you have already i
    npm ci
    npm run dev
    ```
+5. Start OCR:
 
-5. Run the client:
+   ```bash
+   cd server/configApi
+   python3 whiteboard.py
+   ```
+
+6. Run the client:
 
    ```bash
    cd client
